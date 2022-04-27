@@ -1,17 +1,21 @@
-import * as React from "react";
-import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
-import Recipe from "./components/recipe";
+import * as React from 'react';
+import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
+import Recipe from './components/recipe';
 
-let letrecipename = "Biryani"
-let obj = { name: 'harihs', title: 'software' }
+let letrecipename = 'Biryani';
+let obj = { name: 'harihs', title: 'software' };
+
 export default function App() {
+  fetch('recipes.json').then((response) =>
+    response.json().then((data) => console.log(data))
+  );
   return (
     <div>
       <h1>Basic Example</h1>
 
       <p>
         This example demonstrates some of the core features of React Router
-        including nested <code>&lt;Route&gt;</code>s,{" "}
+        including nested <code>&lt;Route&gt;</code>s,{' '}
         <code>&lt;Outlet&gt;</code>s, <code>&lt;Link&gt;</code>s, and using a
         "*" route (aka "splat route") to render a "not found" page when someone
         visits an unrecognized URL.
@@ -21,15 +25,15 @@ export default function App() {
             parent route paths, and nested route elements render inside  
             parent route elements. See the note about <Outlet> below. */}
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/DetailedRecipe/:recipename1" element={<Recipe />} />
-          <Route path="/path1/path2/:harish" element={<Dashboard />} />
+          <Route path='/DetailedRecipe/:recipename1' element={<Recipe />} />
+          <Route path='/path1/path2/:harish' element={<Dashboard />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
-          <Route path="*" element={<NoMatch />} />
+          <Route path='*' element={<NoMatch />} />
         </Route>
       </Routes>
     </div>
@@ -44,16 +48,16 @@ function Layout() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
             <Link to={`DetailedRecipe/${letrecipename}`}>Recipe</Link>
           </li>
           <li>
-            <Link to="/path1/path2/">Dashboard</Link>
+            <Link to='/path1/path2/'>Dashboard</Link>
           </li>
           <li>
-            <Link to="/nothing-here">Nothing Here</Link>
+            <Link to='/nothing-here'>Nothing Here</Link>
           </li>
         </ul>
       </nav>
@@ -87,7 +91,6 @@ function About() {
 function Dashboard() {
   const { harish } = useParams();
   return (
-
     <div>
       <h2>Dashboard: {harish.get('name')}</h2>
     </div>
@@ -99,7 +102,7 @@ function NoMatch() {
     <div>
       <h2>Nothing to see here!</h2>
       <p>
-        <Link to="/">Go to the home page</Link>
+        <Link to='/'>Go to the home page</Link>
       </p>
     </div>
   );

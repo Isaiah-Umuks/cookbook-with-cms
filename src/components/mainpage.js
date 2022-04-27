@@ -1,7 +1,7 @@
 const MainPage = () => {
-    return(
+    return (
         <div>
-            Main Page
+            <button></button>
         </div>
     )
 }

@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 import * as React from 'react';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
 import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
+import { useEffect, useState } from 'react';
+
+import './App.css';
+import { getRecipes, getAllData } from './API/data';
+
 
 let letrecipename = 'Biryani';
 // let obj = { name: 'harihs', title: 'software' };
 
 export default function App() {
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      setRecipes(await getRecipes());
+    })();
+  }, []);
   fetch('recipes.json')
     .then((response) => response.json())
     .then((data) => console.log(data));

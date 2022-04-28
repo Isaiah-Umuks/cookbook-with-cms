@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import * as React from 'react';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
 import Recipe from './components/recipe';
@@ -17,12 +17,11 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      setRecipes(await getRecipes());
+      getRecipes()
+        .then(data => console.log(data));
     })();
   }, []);
-  fetch('recipes.json')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+
   return (
     <div>
       <Routes>

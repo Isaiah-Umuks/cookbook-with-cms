@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Recipe = () => {
     // const [searchParams] = useSearchParams();
     // const selectedRecipe = searchParams.get('id'); // 'name' 
-    const { recipename1 } = useParams();
+    const { recipename } = useParams();
     fetch("recipes.json")
         .then(response => response.json())
         .then(jsonobj => console.log(jsonobj));
@@ -22,12 +22,12 @@ const Recipe = () => {
     //assign the data to you htm
     return (
         <>
-            <h3>ID: {recipename1}</h3>
+            <h3>ID: {recipename}</h3>
             <div className="container ">
                 <div className="umarecipe " style={{ textAlign: "center" }}>
                     <div className="container">
                         <h4 className="display-4 font-weight-light text-danger ">
-                            {recipename1} <span className="text-secondary">|</span>{" "}
+                            {recipename} <span className="text-secondary">|</span>{" "}
                             <span className="text-warning">Indian Recipes</span>
                         </h4>
                         <div className="row d-flex flex-row justify-content-center mb-4">

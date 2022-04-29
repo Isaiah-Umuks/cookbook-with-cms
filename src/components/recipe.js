@@ -5,12 +5,92 @@ import { getRecipes, getAllData } from '../API/data';
 import MainPage from './mainpage';
 
 //import { getPost, getPosts } from "./api";
+function RenderIngredients({ ingriedientsdata }) {
+    console.log(ingriedientsdata.content);
+    const result = ingriedientsdata.content;
+    // const [unorderedlist, setunorderedlist] = useState();
 
+    return result.map(iteration => {
+        let unorderedlist;
+        let paragraph;
+        if (iteration.nodeType === "unordered-list") {
+            const listdata = iteration.content;
+            unorderedlist = listdata.map(item => {
+                return (<li className="list-group-item">
+                    {item.content[0].content[0].value}
+
+                </li>
+                );
+            });
+        };
+
+         if (iteration.nodeType === "paragraph") {
+            const paragraphdata = iteration.content;
+            
+            paragraph = paragraphdata.map(item => {
+                console.log(item.value);
+                return (<p>
+                    {item.value}
+                    test
+                </p>
+                );
+            });
+        };
+        return (
+            <>
+                <ul className="list-group list-group-numbered list-group-flush" style={{ textAlign: "left" }}>
+                    {unorderedlist}
+                </ul>
+                {paragraph}
+            </>
+        );
+    });
+}
+function RenderInstructions({ instructionsdata }) {
+    console.log(instructionsdata.content);
+    const result = instructionsdata.content;
+    // const [unorderedlist, setunorderedlist] = useState();
+
+    return result.map(iteration => {
+        let unorderedlist;
+        let paragraph;
+        if (iteration.nodeType === "unordered-list") {
+            const listdata = iteration.content;
+            unorderedlist = listdata.map(item => {
+                return (<li className="list-group-item">
+                    {item.content[0].content[0].value}
+
+                </li>
+                );
+            });
+        };
+
+         if (iteration.nodeType === "paragraph") {
+            const paragraphdata = iteration.content;
+            
+            paragraph = paragraphdata.map(item => {
+                console.log(item.value);
+                return (<p>
+                    {item.value}
+                </p>
+                );
+            });
+        };
+        return (
+            <>
+        <ul className="list-group list-group-numbered list-group-flush" style={{ textAlign: "left" }} >
+                    {unorderedlist}
+                </ul>
+                {paragraph}
+            </>
+        );
+    });
+}
 const article = (data) => {
     // console.log(data.filter(data => data.fields.name === "Roasted Indian-Spiced Vegetables"));
-    console.log(data);
+    //console.log(data);
     const result = data[0].fields;
-    console.log(result);
+    //console.log(result);
     // const ing={result.ingredients}
     // return ing.map(item=>
 
@@ -53,7 +133,12 @@ const article = (data) => {
                         </div>
                         <br />
                         <div className="row justify-content-center m-0 p-0 ">
-                            <table className="table-bordered col-lg-9">
+                        <h4 className="display-4 text-muted text-center py-5">
+                                <u>Ingredients</u>
+                            </h4>
+                            <RenderIngredients ingriedientsdata={result.ingredients} />
+
+                            {/* <table className="table-bordered col-lg-9">
                                 <thead>
                                     <tr className="table-dark">
                                         <th>Ingredients</th>
@@ -83,13 +168,14 @@ const article = (data) => {
                                         <td>10</td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table> */}
                         </div>
                         <div className="container m-5">
                             <h4 className="display-4 text-muted text-center py-5">
                                 <u>Preparation</u>
                             </h4>
-                            <div className="row ">
+                            <RenderInstructions instructionsdata={result.instructions} />
+                            {/* <div className="row ">
                                 <div className="col-md-3 ">
                                     <h5>Step1</h5>
                                     <img alt='imgdetails' src="./assets/step1.jpg " style={{ width: 130 }} />
@@ -124,7 +210,7 @@ const article = (data) => {
                                         remaining 15g coriander and 2 tbsp toasted almondsand its done.
                                     </p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <br />

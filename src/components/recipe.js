@@ -1,34 +1,27 @@
 import { React, useEffect, useState } from 'react';
-import { useSearchParams, useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
+import { getRecipes, getAllData } from '../API/data';
+import MainPage from './mainpage';
 
 //import { getPost, getPosts } from "./api";
 
+const article = (data) => {
+    // console.log(data.filter(data => data.fields.name === "Roasted Indian-Spiced Vegetables"));
+    console.log(data);
+    const result = data[0].fields;
+    console.log(result);
+    // const ing={result.ingredients}
+    // return ing.map(item=>
 
-const Recipe = () => {
-    // const [searchParams] = useSearchParams();
-    // const selectedRecipe = searchParams.get('id'); // 'name' 
-    const { recipename } = useParams();
-    fetch("recipes.json")
-        .then(response => response.json())
-        .then(jsonobj => console.log(jsonobj));
-
-    /// you access webapi 
-
-    /// get date from webapi
-    //result api , filter with this recipename 
-
-    //you will get data 
-    //assign the data to you htm
     return (
         <>
-            <h3>ID: {recipename}</h3>
+            {/* <h3>ID: {result.name}</h3> */}
             <div className="container ">
                 <div className="umarecipe " style={{ textAlign: "center" }}>
                     <div className="container">
                         <h4 className="display-4 font-weight-light text-danger ">
-                            {recipename} <span className="text-secondary">|</span>{" "}
-                            <span className="text-warning">Indian Recipes</span>
+                            <span className="text-warning">{result.name}</span>
                         </h4>
                         <div className="row d-flex flex-row justify-content-center mb-4">
                             <div className="col-md-4">
@@ -38,7 +31,7 @@ const Recipe = () => {
                             </div>
                             <div className="col-md-">
                                 <p>
-                                    Difficulty <strong>Medium</strong>
+                                    Difficulty <strong>{result.difficulty}</strong>
                                 </p>
                             </div>
                             <div className="col-md-4">
@@ -49,23 +42,13 @@ const Recipe = () => {
                             </div>
                         </div>
                         <div className="box text-center ">
-                            <img alt='imgdetails' img src="./assets/images.jpg" title="Chicken Biryani " />
+                            <img alt='imgdetails' img src={result.image.fields.file.url} title="Chicken Biryani " />
 
                         </div>
                         <div className="p-4 my-4 bg-light">
                             <br />
                             <p className="first_letter">
-                                Hyderabadi chicken biryani is an
-                                <mark>aromatic, mouth watering and authentic Indian dish </mark> with
-                                succulent chicken in layers of fluffy rice, fragrant spices and fried
-                                onions.It is one of the royal delicacies to enjoy on
-                                <mark>special ocassions.</mark>You'll find variations of Biryani all
-                                across the Indian subcontinent, from Pakistan to Bangladesh,
-                                Afghanistan to India. There are 2 main types – one where the protein
-                                and/or vegetables are cooked mixed throughout the rice, and the other
-                                version known as Hyderabad-style biryani in India where meat and rice
-                                are layered and cook in a sealed pot over fire. The latter is the
-                                style of biryani I'm sharing today.
+                                {result.description}
                             </p>
                         </div>
                         <br />
@@ -80,7 +63,7 @@ const Recipe = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Chicken</td>
+                                        <td>{result.ingriedients}</td>
                                         <td>1 kg</td>
                                         <td>100</td>
                                     </tr>
@@ -143,53 +126,7 @@ const Recipe = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <h4 className="display-4 col-lg-12 text-muted ">
-                                <u>Recommended Recipes</u>
-                            </h4>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <div className="col-lg-6">
-                                <img alt='imgdetails'
-                                    src=" ./assets/chicken.jpg "
-                                    style={{ textAlign: "center", width: "100%", height: "100%" }}
-                                    title="Chicken Biryani "
-                                />
-                            </div>
-                            <div className="col-lg-6 ">
-                                <img alt='imgdetails'
-                                    src="./assets/egg.jpg "
-                                    style={{ textAlign: "center", width: "100%", height: "100%" }}
-                                    title="Egg Curry "
-                                />
-                            </div>
-                            <div className="col-lg-6 ">
-                                <img alt='imgdetails'
-                                    src="./assets/laddu.webp "
-                                    style={{
-                                        textAlign: "center",
-                                        width: "100%",
-                                        height: "100%",
-                                        marginTop: "2%"
-                                    }}
-                                    title="Laddu "
-                                />
-                            </div>
-                            <div className="col-lg-6 ">
-                                <img alt='imgdetails'
-                                    src="./assets/paratha.webp "
-                                    style={{
-                                        textAlign: "center",
-                                        width: "100%",
-                                        height: "100%",
-                                        marginTop: "2%"
-                                    }}
-                                    title="Paratha "
-                                />
-                            </div>
-                        </div>
+
                         <br />
                         <br />
                     </div>
@@ -287,6 +224,34 @@ const Recipe = () => {
                 </div>
             </div>
 
+        </>
+    );
+};
+
+const Recipe = () => {
+    // const [searchParams] = useSearchParams();
+    // const selectedRecipe = searchParams.get('id'); // 'name' 
+    const { recipename } = useParams();
+    //alert(recipename);
+    /// you access webapi 
+    const [fetchdata, setFetchdata] = useState();
+
+    useEffect(() => {
+        (async () => {
+            getRecipes()
+                .then(jsonobj => jsonobj.filter(data => data.fields.name === recipename))
+                .then(jsonobj => setFetchdata(article(jsonobj)))
+        })();
+    }, []);
+    /// get date from webapi
+    //result api , filter with this recipename 
+
+    //you will get data 
+    //assign the data to you htm
+    return (
+        <>
+            <Link to="/Homepage">HOME</Link>
+            {fetchdata}
         </>
     );
 }

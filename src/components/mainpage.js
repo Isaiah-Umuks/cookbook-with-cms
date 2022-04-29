@@ -3,47 +3,41 @@ import { useState, useEffect } from 'react';
 import '../index.css';
 import Recipe from './recipe';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
+import { getRecipes, getAllData } from '../API/data';
 
 const article = (data) => {
-    const result = data.recipes;
+    // console.log(data.filter(data => data.fields.name === 'Quinoa and Eggplant Stuffed Peppers'));
+    // console.log(data);
+    const result = data;
     return result.map(iteration => {
-        return (<article >
-            <div className="col">
-                <a href="#" className="text-decoration-none">
-                    <div className="card w-100">
-                        <img className="card-img-top" src={iteration.image_url} />
-                        <div className="card-body">
-                            <p className="card-text" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
-                                {iteration.description}
-                            </p>
-                        </div>
+        return (
+            <div className="col" >
+                <div className="card w-100" >
+                    <img alt='testing' className="card-img" src={iteration.fields.image.fields.file.url} />
+                    <div className="card-body">
+                        <p className="card-text" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
+                            {iteration.fields.name}
+                        </p>
                     </div>
-                </a>
-                {/* <a href="#" className="btn btn-primary" onClick={handleClick}>Read me</a> */}
-                {/* <Link to={`DetailedRecipe/${iteration.name}`}>Recipe</Link> */}
-                <Link className="btn btn-primary" to={`DetailedRecipe/${iteration.name}`}>Read me</Link>
+                </div>
+                <Link className="btn btn-primary" to={`/DetailedRecipe/${iteration.fields.name}`}>Read me</Link>
             </div>
-        </article>
         )
     });
 };
-
-
 const MainPage = () => {
-    const url = './recipes.json';
     const [fetchdata, setFetchdata] = useState();
-    const [Searchurl, setSearchurl] = useState(url);
-
+    const [recipes, setRecipes] = useState([]);
     useEffect(() => {
-        fetch(Searchurl)
-            .then(response => response.json())
-            .then(jsonobj => setFetchdata(article(jsonobj)))
-    }, [Searchurl]);
-
+        (async () => {
+            getRecipes()
+                .then(jsonobj => setFetchdata(article(jsonobj)))
+        })();
+    }, []);
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand text-dark" href="#">The Recipe Book</a>
+                <a className="navbar-brand text-dark" alt='tes' href="#">The Recipe Book</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                 </button>
@@ -91,9 +85,8 @@ const MainPage = () => {
                 <h4 className="text-center text-dark p-2 mr-2" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Here you can find some of our most popular recipes.</h4>
                 <div className="container">
                     <div className="row">
-                        <main>
-                            {fetchdata}
-                        </main>
+
+                        {fetchdata}
                     </div>
                 </div>
             </main>
@@ -120,10 +113,10 @@ const MainPage = () => {
                         </div>
                     </form>
                     <div className="container p-2 m-2">
-                        <a href><img className="mr-3" src="assets/logo_facebook.png" width="30px" height alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_instagram.png" width="30px" height alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_twitter.png" width="30px" height alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_youtube.png" width="30px" height alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_facebook.png" width="30px" height="true" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_instagram.png" width="30px" height="true" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_twitter.png" width="30px" height="true" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_youtube.png" width="30px" height="true" alt='testing' /></a>
                     </div>
                 </div>
                 <div className="copyright d-flex flex-row justify-content-around mt-3 pt-2 bg-light">
@@ -133,9 +126,6 @@ const MainPage = () => {
                     <p className="copyright-text">copyright © 2022 - The International Cookbook</p>
                 </div>
             </footer>
-            <Routes>
-                <Route path='Homepage/DetailedRecipe/:recipename' element={<Recipe />} />
-            </Routes>
         </div>
     );
 }

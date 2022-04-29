@@ -1,11 +1,11 @@
 
-import * as React from 'react';
+import React from 'react';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
 import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
 import { useEffect, useState } from 'react';
 
-import './App.css';
+import * as API from './App.css';
 import { getRecipes, getAllData } from './API/data';
 
 
@@ -23,6 +23,7 @@ export default function App() {
   }, []);
 
   return (
+
     <div>
       <Routes>
         <Route path='/' element={<Layout />} />
@@ -42,9 +43,9 @@ function Layout() {
           <li>
             <Link to='/Homepage'>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={`DetailedRecipe/${letrecipename}`}>Recipe</Link>
-          </li>
+          </li> */}
 
         </ul>
       </nav>

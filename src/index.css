@@ -8,3 +8,38 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.card-text {
+    display: inline-block;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.card-img {
+    max-height: 250px;
+    min-height: 250px;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.col {
+    padding-bottom: 10ex;
+    width: 30%;
+}
+
+.email {
+    paddding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    background-color: hwb(78 7% 16%);
+    height: 40px;
+    margin-right: 5px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

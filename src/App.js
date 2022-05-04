@@ -12,19 +12,11 @@ let letrecipename = 'Biryani';
 // let obj = { name: 'harihs', title: 'software' };
 
 export default function App() {
-  const [recipes, setRecipes] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      getRecipes()
-        .then(data => console.log(data));
-    })();
-  }, []);
 
   return (
 
     <div class="container-sm">
-       <NavBar />
+      <NavBar />
       <Routes>
         <Route path='/' element={<Layout />} />
         <Route path='/Homepage/' element={<MainPage />} />
@@ -34,11 +26,10 @@ export default function App() {
     </div>
   );
 }
-
 function Layout() {
   return (
     <div>
-    <MainPage />
+      <MainPage />
       <nav>
         <ul>
           <li>

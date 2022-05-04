@@ -5,22 +5,7 @@ import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
 import { useEffect, useState } from 'react';
 
-import * as API from './App.css';
-import { getRecipes, getAllData } from './API/data';
-
-
-let letrecipename = 'Biryani';
-// let obj = { name: 'harihs', title: 'software' };
-
 export default function App() {
-  const [recipes, setRecipes] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      getRecipes()
-        .then(data => console.log(data));
-    })();
-  }, []);
 
   return (
 
@@ -34,7 +19,6 @@ export default function App() {
     </div>
   );
 }
-
 function Layout() {
   return (
     <div>

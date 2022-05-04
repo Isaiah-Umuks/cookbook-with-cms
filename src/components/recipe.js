@@ -6,7 +6,8 @@ import MainPage from './mainpage';
 
 //import { getPost, getPosts } from "./api";
 function RenderIngredients({ ingriedientsdata }) {
-    console.log(ingriedientsdata.content);
+    // console.log(ingriedientsdata);
+    // console.log(ingriedientsdata.content);
     const result = ingriedientsdata.content;
     // const [unorderedlist, setunorderedlist] = useState();
 
@@ -15,6 +16,7 @@ function RenderIngredients({ ingriedientsdata }) {
         let paragraph;
         if (iteration.nodeType === "unordered-list") {
             const listdata = iteration.content;
+            // console.log(listdata);
             unorderedlist = listdata.map(item => {
                 return (<li className="list-group-item">
                     {item.content[0].content[0].value}
@@ -24,11 +26,11 @@ function RenderIngredients({ ingriedientsdata }) {
             });
         };
 
-         if (iteration.nodeType === "paragraph") {
+        if (iteration.nodeType === "paragraph") {
             const paragraphdata = iteration.content;
-            
+
             paragraph = paragraphdata.map(item => {
-                console.log(item.value);
+                // console.log(item.value);
                 return (<p>
                     {item.value}
                     test
@@ -47,7 +49,7 @@ function RenderIngredients({ ingriedientsdata }) {
     });
 }
 function RenderInstructions({ instructionsdata }) {
-    console.log(instructionsdata.content);
+    // console.log(instructionsdata.content);
     const result = instructionsdata.content;
     // const [unorderedlist, setunorderedlist] = useState();
 
@@ -65,11 +67,11 @@ function RenderInstructions({ instructionsdata }) {
             });
         };
 
-         if (iteration.nodeType === "paragraph") {
+        if (iteration.nodeType === "paragraph") {
             const paragraphdata = iteration.content;
-            
+
             paragraph = paragraphdata.map(item => {
-                console.log(item.value);
+                // console.log(item.value);
                 return (<p>
                     {item.value}
                 </p>
@@ -78,7 +80,7 @@ function RenderInstructions({ instructionsdata }) {
         };
         return (
             <>
-        <ul className="list-group list-group-numbered list-group-flush" style={{ textAlign: "left" }} >
+                <ul className="list-group list-group-numbered list-group-flush" style={{ textAlign: "left" }} >
                     {unorderedlist}
                 </ul>
                 {paragraph}
@@ -88,7 +90,7 @@ function RenderInstructions({ instructionsdata }) {
 }
 const article = (data) => {
     // console.log(data.filter(data => data.fields.name === "Roasted Indian-Spiced Vegetables"));
-    //console.log(data);
+    // console.log(data);
     const result = data[0].fields;
     //console.log(result);
     // const ing={result.ingredients}
@@ -133,7 +135,7 @@ const article = (data) => {
                         </div>
                         <br />
                         <div className="row justify-content-center m-0 p-0 ">
-                        <h4 className="display-4 text-muted text-center py-5">
+                            <h4 className="display-4 text-muted text-center py-5">
                                 <u>Ingredients</u>
                             </h4>
                             <RenderIngredients ingriedientsdata={result.ingredients} />
@@ -326,7 +328,7 @@ const Recipe = () => {
         (async () => {
             getRecipes()
                 .then(jsonobj => jsonobj.filter(data => data.fields.name === recipename))
-                .then(jsonobj => setFetchdata(article(jsonobj)))
+                .then(filtereddata => setFetchdata(article(filtereddata)))
         })();
     }, []);
     /// get date from webapi

@@ -3,31 +3,31 @@ import { useState, useEffect } from 'react';
 import '../index.css';
 import Recipe from './recipe';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
-import { getRecipes, getAllData } from '../API/data';
+import { getRecipes, getAllData } from '../API/data.js';//data.js file
 
 const article = (data) => {
     // console.log(data.filter(data => data.fields.name === 'Quinoa and Eggplant Stuffed Peppers'));
-    // console.log(data);
+    console.log(data);
     const result = data;
     return result.map(iteration => {
         return (
-            <div className="col" >
-                <div className="card w-100" >
+            <div className="col md-4" >
+                <div className="card w-100 md-4" style={{ border: "white" }}>
                     <img alt='testing' className="card-img" src={iteration.fields.image.fields.file.url} />
                     <div className="card-body">
                         <p className="card-text" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
                             {iteration.fields.name}
                         </p>
+
                     </div>
                 </div>
-                <Link className="btn btn-primary" to={`/DetailedRecipe/${iteration.fields.name}`}>Read me</Link>
+                <Link className="btn btn-primary" to={`/DetailedRecipe/${iteration.fields.name}`}>Read more</Link>
             </div>
         )
     });
 };
 const MainPage = () => {
     const [fetchdata, setFetchdata] = useState();
-    const [recipes, setRecipes] = useState([]);
     useEffect(() => {
         (async () => {
             getRecipes()
@@ -71,7 +71,7 @@ const MainPage = () => {
             </nav>
             <main className="m-0 jumbotron">
                 <div className="topper container">
-                    <div style={{ backgroundImage: 'url(assets/intro.jpeg)', height: '700px', backgroundRepeat: 'no-repeat', backgroundSize: '100% auto' }}>
+                    <div style={{ backgroundImage: 'url(assets/intro.jpeg)', height: '500px', backgroundRepeat: 'no-repeat', backgroundSize: '100% auto' }}>
                         <div className="row h-100 p-0 mx-0">
                             <div className="col text-center bg-light bg-opacity-10 text-dark border-dark my-auto">
                                 <h2 className="mx-auto p-2" style={{ fontFamily: 'Georgia, "Times New Roman", Times, serif' }}>Welcome to the Amazing Cookbook</h2>
@@ -81,7 +81,7 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
-                <h1 className="text-center text-dark p-2 mr-2" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Recipes</h1>
+                <h1 className="text-center text-dark p-2 mr-2" style={{ fontFamily: '"Times New Roman", Times, serif', color: 'violet' }}>Recipes</h1>
                 <h4 className="text-center text-dark p-2 mr-2" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Here you can find some of our most popular recipes.</h4>
                 <div className="container">
                     <div className="row">
@@ -103,20 +103,19 @@ const MainPage = () => {
                                 </p>
                             </div>
                             <div className="container d-flex flex-row justify-content-start align-content-center p-0">
-                                <div className="container" style={{ backgroundColor: 'white' }}>
-                                    <input className="p-1 flex-grow-1" type="text" placeholder="Email address" name="mail" required />
-                                </div>
                                 <div className="container">
+                                    <input className="email" type="text" placeholder="Email address" />
+
                                     <input type="submit" defaultValue="Subscribe" className="btn btn-outline-light" />
                                 </div>
                             </div>
                         </div>
                     </form>
                     <div className="container p-2 m-2">
-                        <a href><img className="mr-3" src="assets/logo_facebook.png" width="30px" height="true" alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_instagram.png" width="30px" height="true" alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_twitter.png" width="30px" height="true" alt='testing' /></a>
-                        <a href><img className="mr-3" src="assets/logo_youtube.png" width="30px" height="true" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_facebook.png" width="30px" margin-right="5px" height="true" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_instagram.png" width="30px" height="true" margin-right="5px" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_twitter.png" width="30px" height="true" margin-right="5px" alt='testing' /></a>
+                        <a href><img className="mr-3" src="assets/logo_youtube.png" width="30px" height="true" margin-right="5px" alt='testing' /></a>
                     </div>
                 </div>
                 <div className="copyright d-flex flex-row justify-content-around mt-3 pt-2 bg-light">

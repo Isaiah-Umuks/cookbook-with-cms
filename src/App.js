@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
 import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
-
-import * as API from './App.css';
 import { getRecipes, getAllData } from './API/data';
+import NavBar from './components/NavBar';
 
 
 let letrecipename = 'Biryani';
@@ -24,7 +23,8 @@ export default function App() {
 
   return (
 
-    <div>
+    <div class="container-sm">
+       <NavBar />
       <Routes>
         <Route path='/' element={<Layout />} />
         <Route path='/Homepage/' element={<MainPage />} />
@@ -38,10 +38,11 @@ export default function App() {
 function Layout() {
   return (
     <div>
+    <MainPage />
       <nav>
         <ul>
           <li>
-            <Link to='/Homepage'>Home</Link>
+            {/* <Link to='/HomePage'>Home</Link> */}
           </li>
           {/* <li>
             <Link to={`DetailedRecipe/${letrecipename}`}>Recipe</Link>

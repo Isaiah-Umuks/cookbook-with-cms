@@ -336,7 +336,7 @@ const Recipe = () => {
     //assign the data to you htm
     return (
         <>
-            <Link to="/Homepage">HOME</Link>
+            {/* <Link to="/Homepage">HOME</Link> */}
             {fetchdata}
         </>
     );

@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
 import { getRecipes, getAllData } from '../API/data';
 import MainPage from './mainpage';
-import Footer from './footer';
 
 //import { getPost, getPosts } from "./api";
 function RenderIngredients({ ingriedientsdata }) {
@@ -241,7 +240,83 @@ const article = (data) => {
               </div>
             </div>
           </div>
-          <Footer />
+          <div className='container d-flex flex-column align-items-start justify-content-center'>
+            <form action='action_page.php'>
+              <div
+                className='d-flex flex-column align-items-start justify-content-start mw-25'
+                style={{ width: 420 }}
+              >
+                <div className='container'>
+                  <h4 className='text-white'>
+                    Want to recieve oure latest Recipes?
+                  </h4>
+                  <p className='text-white'>
+                    Then subscribe to our Newsletter and you will be the first
+                    to try out our newest creations!
+                  </p>
+                </div>
+                <div className='container d-flex flex-row justify-content-start align-content-center p-0'>
+                  <div
+                    className='container'
+                    style={{ backgroundColor: 'white' }}
+                  >
+                    <input
+                      className='p-1 flex-grow-1'
+                      type='text'
+                      placeholder='Email address'
+                      name='mail'
+                      required=''
+                    />
+                  </div>
+                  <div className='container'>
+                    <input
+                      type='submit'
+                      defaultValue='Subscribe'
+                      className='btn btn-outline-light'
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div className='container p-2 m-2'>
+              <a href='#'>
+                <img
+                  className='mr-3'
+                  src='./assets/logo_facebook.png'
+                  width='30px'
+                  height=''
+                  alt='recipe-logo'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  className='mr-3'
+                  src='./assets/logo_instagram.png'
+                  width='30px'
+                  height=''
+                  alt='recipe-logo'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  className='mr-3'
+                  src='./assets/logo_twitter.png'
+                  width='30px'
+                  height=''
+                  alt='recipe-logo'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  className='mr-3'
+                  src='./assets/logo_youtube.png'
+                  width='30px'
+                  height=''
+                  alt='recipe-logo'
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
@@ -249,11 +324,7 @@ const article = (data) => {
 };
 
 const Recipe = () => {
-  // const [searchParams] = useSearchParams();
-  // const selectedRecipe = searchParams.get('id'); // 'name'
   const { recipename } = useParams();
-  //alert(recipename);
-  /// you access webapi
   const [fetchdata, setFetchdata] = useState();
 
   useEffect(() => {
@@ -264,7 +335,7 @@ const Recipe = () => {
         )
         .then((jsonobj) => setFetchdata(article(jsonobj)));
     })();
-  }, []);
+  }, [recipename]);
   /// get date from webapi
   //result api , filter with this recipename
 

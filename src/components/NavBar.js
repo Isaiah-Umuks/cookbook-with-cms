@@ -1,14 +1,14 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-      <a className='navbar-brand text-dark' alt='tes' href='/'>
+      <Link className='navbar-brand text-dark' to={'/'}>
         COOKBOOK-CMS
-      </a>
+      </Link>
       <button
         className='navbar-toggler'
         type='button'
@@ -23,24 +23,24 @@ const navbar = () => {
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className='navbar-nav nav-justified'>
           <li className='nav-item active'>
-            <a className='nav-link text-dark' href='/'>
+            <Link className='nav-link text-dark' to='/'>
               Home
-            </a>
+            </Link>
           </li>
           <li className='nav-item'>
-            <a className='nav-link text-dark' href='#'>
+            <Link className='nav-link text-dark' to='#'>
               About Us
-            </a>
+            </Link>
           </li>
           <li className='nav-item dropdown'>
-            <a className='nav-link text-dark' href='/'>
+            <Link className='nav-link text-dark' to='/'>
               Recipes
-            </a>
+            </Link>
           </li>
           <li className='nav-item'>
-            <a className='nav-link text-dark' href='#'>
+            <Link className='nav-link text-dark' to='#'>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <form className='form-inline my-2 my-lg-0'>

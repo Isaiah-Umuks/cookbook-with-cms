@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getRecipes } from '../API/data';
-import MainPage from './mainpage';
+
 import Footer from './footer';
 
 //import { getPost, getPosts } from "./api";

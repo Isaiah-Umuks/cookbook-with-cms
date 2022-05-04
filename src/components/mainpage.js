@@ -2,10 +2,10 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import Recipe from './recipe';
-import { Routes, Route, Outlet, Link, useParams } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 import Footer from './footer.js';
-import { getRecipes, getAllData } from '../API/data.js'; //data.js file
+import { getRecipes } from '../API/data.js'; //data.js file
 
 const article = (data) => {
   // console.log(data.filter(data => data.fields.name === 'Quinoa and Eggplant Stuffed Peppers'));

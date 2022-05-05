@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from 'react-router-dom';
 import { getRecipes } from '../API/data';
 
-import Footer from './footer';
+import Footer from './footer.js';
 
 //import { getPost, getPosts } from "./api";
 function RenderIngredients({ ingriedientsdata }) {
@@ -144,7 +144,7 @@ const article = (data) => {
               <RenderInstructions instructionsdata={result.instructions} />
             </div>
           </div>
-          <div className='container d-flex flex-column align-items-start justify-content-center'>
+          <div >
             <Footer />
           </div>
         </div>

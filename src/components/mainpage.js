@@ -13,7 +13,7 @@ const article = (data) => {
   const result = data;
   return result.map((iteration) => {
     return (
-      <div className='col-4'>
+      <div className='col-4 mt-5'>
         <div className='card w-100 md-4' style={{ border: 'white' }}>
           <img
             alt='testing'
@@ -27,14 +27,17 @@ const article = (data) => {
             >
               {iteration.fields.name}
             </p>
-          </div>
-        </div>
-        <Link
-          className='btn btn-primary'
+            <div class="text-center">
+            <Link
+          className='btn btn-primary' 
           to={`/DetailedRecipe/${iteration.fields.name}`}
         >
           Read more
         </Link>
+        </div>
+          </div>
+        </div>
+        
       </div>
     );
   });
@@ -105,11 +108,10 @@ const MainPage = () => {
           Here you can find some of our most popular recipes.
         </h4>
         <div className='container'>
-          <div className='row d-flex flex-wrap'>{fetchdata}</div>
+          <div className='row d-flex flex-wrap mt-2'>{fetchdata}</div>
         </div>
       </main>
-      <Footer />
-    </div>
+      </div>
   );
 };
 

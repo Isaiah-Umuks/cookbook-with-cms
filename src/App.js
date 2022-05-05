@@ -4,6 +4,7 @@ import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
+import Footer from './components/footer';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path='/' element={<MainPage />} />
         <Route path='/DetailedRecipe/:recipename' element={<Recipe />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

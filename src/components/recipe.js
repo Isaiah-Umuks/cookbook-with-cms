@@ -145,7 +145,7 @@ const article = (data) => {
             </div>
           </div>
           <div className='container d-flex flex-column align-items-start justify-content-center'>
-            <Footer />
+           
           </div>
         </div>
       </div>

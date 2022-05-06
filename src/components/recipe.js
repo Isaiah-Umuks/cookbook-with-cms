@@ -3,16 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from 'react-router-dom';
 import { getRecipes } from '../API/data';
 
-import Footer from './footer.js';
+// import Footer from './footer.js';
 
 //import { getPost, getPosts } from "./api";
 function RenderIngredients({ ingriedientsdata }) {
-  console.log(ingriedientsdata.content);
+  //console.log(ingriedientsdata.content);
   const result = ingriedientsdata.content;
-
-  return result.map((iteration) => {
-    let unorderedlist;
-    let paragraph;
+  let unorderedlist;
+  let paragraph;
+  let tabledata;
+  const Ingredients = result.map((iteration) => {
     if (iteration.nodeType === 'unordered-list') {
       const listdata = iteration.content;
       unorderedlist = listdata.map((item) => {
@@ -28,36 +28,62 @@ function RenderIngredients({ ingriedientsdata }) {
       const paragraphdata = iteration.content;
 
       paragraph = paragraphdata.map((item) => {
-        console.log(item.value);
+        // console.log(item.value);
         return (
           <p>
             {item.value}
-            test
           </p>
         );
       });
     }
+    if (iteration.nodeType === 'table') {
+      const tableitems = iteration.content;
+      tabledata = tableitems.map((item) => {
+        // console.log(item);
+        return (
+          <tr>
+            <td>{item.content[0].content[0].content[0].value}</td>
+            <td>{item.content[1].content[0].content[0].value}</td>
+          </tr>
+        );
+      });
+    }
     return (
-      <>
-        <ul
-          className='list-group list-group-numbered list-group-flush'
-          style={{ textAlign: 'left' }}
-        >
-          {unorderedlist}
-        </ul>
-        {paragraph}
-      </>
+      <></>
     );
   });
+
+  return (
+    <>
+      <ul
+        className='list-group list-group-numbered list-group-flush'
+        style={{ textAlign: 'left' }}
+      >
+        {unorderedlist}
+      </ul>
+      {paragraph}
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Quantity</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tabledata}
+        </tbody>
+      </table>
+
+    </>
+  );
 }
 function RenderInstructions({ instructionsdata }) {
-  console.log(instructionsdata.content);
+  // console.log(instructionsdata.content);
   const result = instructionsdata.content;
   // const [unorderedlist, setunorderedlist] = useState();
-
-  return result.map((iteration) => {
-    let unorderedlist;
-    let paragraph;
+  let unorderedlist;
+  let paragraph;
+  const Instructions = result.map((iteration) => {
     if (iteration.nodeType === 'unordered-list') {
       const listdata = iteration.content;
       unorderedlist = listdata.map((item) => {
@@ -73,26 +99,30 @@ function RenderInstructions({ instructionsdata }) {
       const paragraphdata = iteration.content;
 
       paragraph = paragraphdata.map((item) => {
-        console.log(item.value);
-        return <p>{item.value}</p>;
+        // console.log(item.value);
+        return <p>{item.value}<br /></p>;
       });
     }
     return (
       <>
-        <ul
-          className='list-group list-group-numbered list-group-flush'
-          style={{ textAlign: 'left' }}
-        >
-          {unorderedlist}
-        </ul>
-        {paragraph}
       </>
     );
   });
+  return (
+    <>
+      <ul
+        className='list-group list-group-numbered list-group-flush'
+        style={{ textAlign: 'left' }}>
+        {unorderedlist}
+      </ul>
+      {paragraph}
+    </>
+  );
+
 }
 const article = (data) => {
   const result = data[0].fields;
-
+  console.log(result);
   return (
     <>
       <div className='container '>
@@ -145,7 +175,6 @@ const article = (data) => {
             </div>
           </div>
           <div >
-            <Footer />
           </div>
         </div>
       </div>

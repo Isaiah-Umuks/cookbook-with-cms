@@ -1,14 +1,11 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 import { Link } from 'react-router-dom';
-import { getRecipes } from '../API/data.js'; //data.js file
 
 const article = (data) => {
-  const result = data;
-  return result.map((iteration) => {
+  return data.map((iteration) => {
     return (
       <div className='col-4 mt-5'>
         <div className='card w-100 md-4' style={{ border: 'white' }}>
@@ -38,13 +35,7 @@ const article = (data) => {
     );
   });
 };
-const MainPage = () => {
-  const [fetchdata, setFetchdata] = useState();
-  useEffect(() => {
-    (async () => {
-      getRecipes().then((jsonobj) => setFetchdata(article(jsonobj)));
-    })();
-  }, []);
+const MainPage = (data) => {
   return (
     <div>
       <main className='m-0 jumbotron'>
@@ -104,7 +95,7 @@ const MainPage = () => {
           Here you can find some of our most popular recipes.
         </h4>
         <div className='container'>
-          <div className='row d-flex flex-wrap mt-2'>{fetchdata}</div>
+          <div className='row d-flex flex-wrap mt-2'>{article(data)}</div>
         </div>
       </main>
     </div>

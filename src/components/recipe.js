@@ -1,57 +1,10 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useParams } from 'react-router-dom';
-import { getRecipes } from '../API/data';
 
-// import Footer from './footer.js';
-
-//import { getPost, getPosts } from "./api";
 function RenderIngredients({ ingriedientsdata }) {
-  //console.log(ingriedientsdata.content);
-  const result = ingriedientsdata.content;
   let unorderedlist;
   let paragraph;
   let tabledata;
-  const Ingredients = result.map((iteration) => {
-    if (iteration.nodeType === 'unordered-list') {
-      const listdata = iteration.content;
-      unorderedlist = listdata.map((item) => {
-        return (
-          <li className='list-group-item'>
-            {item.content[0].content[0].value}
-          </li>
-        );
-      });
-    }
-
-    if (iteration.nodeType === 'paragraph') {
-      const paragraphdata = iteration.content;
-
-      paragraph = paragraphdata.map((item) => {
-        // console.log(item.value);
-        return (
-          <p>
-            {item.value}
-          </p>
-        );
-      });
-    }
-    if (iteration.nodeType === 'table') {
-      const tableitems = iteration.content;
-      tabledata = tableitems.map((item) => {
-        // console.log(item);
-        return (
-          <tr>
-            <td>{item.content[0].content[0].content[0].value}</td>
-            <td>{item.content[1].content[0].content[0].value}</td>
-          </tr>
-        );
-      });
-    }
-    return (
-      <></>
-    );
-  });
 
   return (
     <>
@@ -62,63 +15,33 @@ function RenderIngredients({ ingriedientsdata }) {
         {unorderedlist}
       </ul>
       {paragraph}
-      <table class="table">
+      <table class='table'>
         <thead>
           <tr>
-            <th scope="col">Quantity</th>
-            <th scope="col">Name</th>
+            <th scope='col'>Quantity</th>
+            <th scope='col'>Name</th>
           </tr>
         </thead>
-        <tbody>
-          {tabledata}
-        </tbody>
+        <tbody>{tabledata}</tbody>
       </table>
-
     </>
   );
 }
 function RenderInstructions({ instructionsdata }) {
-  // console.log(instructionsdata.content);
-  const result = instructionsdata.content;
-  // const [unorderedlist, setunorderedlist] = useState();
   let unorderedlist;
   let paragraph;
-  const Instructions = result.map((iteration) => {
-    if (iteration.nodeType === 'unordered-list') {
-      const listdata = iteration.content;
-      unorderedlist = listdata.map((item) => {
-        return (
-          <li className='list-group-item'>
-            {item.content[0].content[0].value}
-          </li>
-        );
-      });
-    }
 
-    if (iteration.nodeType === 'paragraph') {
-      const paragraphdata = iteration.content;
-
-      paragraph = paragraphdata.map((item) => {
-        // console.log(item.value);
-        return <p>{item.value}<br /></p>;
-      });
-    }
-    return (
-      <>
-      </>
-    );
-  });
   return (
     <>
       <ul
         className='list-group list-group-numbered list-group-flush'
-        style={{ textAlign: 'left' }}>
+        style={{ textAlign: 'left' }}
+      >
         {unorderedlist}
       </ul>
       {paragraph}
     </>
   );
-
 }
 const article = (data) => {
   const result = data[0].fields;
@@ -174,29 +97,15 @@ const article = (data) => {
               <RenderInstructions instructionsdata={result.instructions} />
             </div>
           </div>
-          <div >
-          </div>
+          <div></div>
         </div>
       </div>
     </>
   );
 };
 
-const Recipe = () => {
-  const { recipename } = useParams();
-  const [fetchdata, setFetchdata] = useState();
-
-  useEffect(() => {
-    (async () => {
-      getRecipes()
-        .then((jsonobj) =>
-          jsonobj.filter((data) => data.fields.name === recipename)
-        )
-        .then((jsonobj) => setFetchdata(article(jsonobj)));
-    })();
-  }, [recipename]);
-
-  return <>{fetchdata}</>;
+const Recipe = (data) => {
+  return <>{article(data)}</>;
 };
 
 export default Recipe;

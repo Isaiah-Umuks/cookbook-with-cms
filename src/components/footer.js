@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </form>
         <div className='container p-2 m-2'>
-          <a className='mx-2' href>
+          <a className='mx-2' href='true'>
             <img
               className='mr-3 ml-2'
               src='assets/logo_facebook.png'
@@ -54,7 +54,7 @@ const Footer = () => {
               alt='testing'
             />
           </a>
-          <a className='mx-2' href>
+          <a className='mx-2' href='true'>
             <img
               className='mr-3'
               src='assets/logo_instagram.png'
@@ -63,7 +63,7 @@ const Footer = () => {
               alt='testing'
             />
           </a>
-          <a className='mx-2' href>
+          <a className='mx-2' href='true'>
             <img
               className='mr-3'
               src='assets/logo_twitter.png'
@@ -72,7 +72,7 @@ const Footer = () => {
               alt='testing'
             />
           </a>
-          <a className='mx-2' href>
+          <a className='mx-2' href='true'>
             <img
               className='mr-3'
               src='assets/logo_youtube.png'

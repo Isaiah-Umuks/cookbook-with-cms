@@ -5,9 +5,9 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 
 const article = (data) => {
-  return data.values().map((iteration) => {
+  return data.map((iteration, i) => {
     return (
-      <div className='col-4 mt-5'>
+      <div key={iteration.sys.id} className='col-4 mt-5'>
         <div className='card w-100 md-4' style={{ border: 'white' }}>
           <img
             alt='testing'
@@ -21,7 +21,7 @@ const article = (data) => {
             >
               {iteration.fields.name}
             </p>
-            <div class='text-center'>
+            <div className='text-center'>
               <Link
                 className='btn btn-primary'
                 to={`/DetailedRecipe/${iteration.fields.name}`}
@@ -35,7 +35,7 @@ const article = (data) => {
     );
   });
 };
-const MainPage = (data) => {
+const MainPage = ({ data }) => {
   return (
     <div>
       <main className='m-0 jumbotron'>
@@ -95,7 +95,9 @@ const MainPage = (data) => {
           Here you can find some of our most popular recipes.
         </h4>
         <div className='container'>
-          <div className='row d-flex flex-wrap mt-2'>{article(data)}</div>
+          <div className='row d-flex flex-wrap mt-2'>
+            {data && article(data)}
+          </div>
         </div>
       </main>
     </div>

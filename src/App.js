@@ -13,19 +13,18 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      await getRecipes().then((el) => console.log(el));
-      //getRecipes().then((jsonobj) => setData(jsonobj));
+      getRecipes().then((jsonobj) => setData(jsonobj));
     })();
   }, [recipename]);
 
   return (
-    <div class='container-sm'>
+    <div className='container-sm'>
       <NavBar />
       <Routes>
-        <Route path='/' element={<MainPage {...data} />} />
+        <Route path='/' element={<MainPage data={data} />} />
         <Route
           path='/DetailedRecipe/:recipename'
-          element={<Recipe {...data} />}
+          element={<Recipe data={data} />}
         />
       </Routes>
       <Footer />

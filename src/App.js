@@ -13,8 +13,8 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      console.log('TEST');
-      getRecipes().then((jsonobj) => setData(jsonobj));
+      await getRecipes().then((el) => console.log(el));
+      //getRecipes().then((jsonobj) => setData(jsonobj));
     })();
   }, [recipename]);
 

@@ -5,7 +5,7 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 
 const article = (data) => {
-  return data.map((iteration) => {
+  return data.values().map((iteration) => {
     return (
       <div className='col-4 mt-5'>
         <div className='card w-100 md-4' style={{ border: 'white' }}>

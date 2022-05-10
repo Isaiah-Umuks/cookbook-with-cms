@@ -1,66 +1,3785 @@
 {
-    "recipes": [{
-            "name": "spagetthi",
-            "description": "Reall good sphagetthi, how to cook",
-            "image_url": "http//....de",
-            "created_at": "",
-            "rating": 10.1,
-            "comment_num": 20,
-            "difficulty": "easy",
-            "cook_time": 10.0,
-            "ingredients": [{
-                    "quantity": 2,
-                    "description": "sphagetti"
+  "sys": {
+    "type": "Array"
+  },
+  "total": 6,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "6HBwAOd47aiVZpiEaUDQSG",
+        "type": "Entry",
+        "createdAt": "2022-04-27T16:10:01.120Z",
+        "updatedAt": "2022-05-05T18:05:13.283Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": " Spaghetti aglio, olio e peperoncino",
+        "description": "Aglio e Olio literally means olive oil and garlic in Italian. It is a traditional pasta recipe from Naples.",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "4H8Whtf5IXxNdgEoryop2q",
+            "type": "Asset",
+            "createdAt": "2022-04-27T16:10:52.010Z",
+            "updatedAt": "2022-04-27T16:10:52.010Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "spaghetti-aglio-olio-e-peperoncino",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/4H8Whtf5IXxNdgEoryop2q/b4f755522a91702843d250a2b2566ac7/spaghetti-aglio-olio-e-peperoncino.jpg",
+              "details": {
+                "size": 52168,
+                "image": {
+                  "width": 600,
+                  "height": 400
+                }
+              },
+              "fileName": "spaghetti-aglio-olio-e-peperoncino.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        "difficulty": "Easy",
+        "cookTimeInMin": 15,
+        "ingredients": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "table",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "500 g",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Spaghetti (aus Hartweizengrieß)",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                    "quantity": 2,
-                    "description": "Tomato"
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "1",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Tomato",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "5",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Knoblauch",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "2",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Peperoni",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "5 EL",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Petersilie",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "2 TL",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Gemüsebrühepulver (Delikatessbrühe)",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "100 ml",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Oliven ol",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "40 g",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Hartkäse (z. B. Grana Padano oder Pecorino, 1 Jahr Reifegrad)",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "1 TL",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Basilikum",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "1 TL",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "Oregano",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "table-row",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "½ TL",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "table-cell",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "paragraph",
+                          "data": {},
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "salz",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
-            ],
-            "instruction": "Step 1. Cook Noodles \n Step 2. .... Step 3. Profit"
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
         },
-
-        {
-            "name": "tomato soup",
-            "description": "Reall good sphagetthi, how to cook",
-            "image_url": "http//....de",
-            "created_at": "date...",
-            "rating": "",
-            "comment_num": 20,
-            "difficulty": "easy",
-            "cook_time": "10",
-            "ingredients": [{
-                "quantity": "description"
-            }]
-        },
-
-        {
-            "name": "fried rice",
-            "description": "Reall good fried rice, how to cook",
-            "image_url": "http//....de",
-            "created_at": "date...",
-            "rating": "",
-            "comment_num": 20,
-            "difficulty": "easy",
-            "cook_time": "10",
-            "ingredients": [{
-                "quantity": "description"
-            }]
-        },
-
-        {
-            "name": "beans cake",
-            "description": "Reall good beans cake, how to cook",
-            "image_url": "http//....de",
-            "created_at": "date...",
-            "rating": "",
-            "comment_num": 20,
-            "difficulty": "easy",
-            "cook_time": "10",
-            "ingredients": [{
-                "quantity": "description"
-            }]
+        "instructions": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Zunächst die Spaghetti nach Packungsanleitung kochen.\nAnmerkung: Kurz vor Ende der Garzeit benötigt ihr noch 2 Kellen vom Kochwasser, nicht vergessen.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Den Hartkäse mit einer Reibe zerkleinern. Die Tomate in kleine Würfel schneiden und in eine Schüssel geben. Dann den Knoblauch klein schneiden, leicht salzen, kurz warten und zerdrücken (durch das Salz wird der Knoblauch beim Zerdrücken zu einer Paste). Dies ebenfalls mit in die Schüssel geben. Basilikum, Oregano, Petersilie und Peperoni ebenfalls klein schneiden und in die Schüssel geben. Das Delikatessbrühepulver hinzugeben und die Würzmischung ist fertig. Nun die 2 Kellen des Kochwassers hinzugeben (unbedingt dieses Wasser verwenden, denn die Nudeln haben beim Kochen eine Menge Stärke abgegeben, die wir brauchen). Alles gut verrühren und 2 Minuten ziehen lassen. Wenn die Würzmischung leicht versalzen schmeckt, ist sie richtig.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Die Nudeln gut abtropfen lassen und in einer heißen Pfanne maximal 1 Minute schwenken. Nun die Würzmischung hinzugeben, gut durchschwenken und dann den geriebenen Hartkäse hinzugeben. Dieser wirkt als Bindemittel und die flüssige Würzmischung verbindet sich nun mit den Nudeln.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Vor dem Servieren noch das kalte Olivenöl darübergeben und vermischen. Nicht vorher! Das Öl verliert extrem an Geschmack und Qualität, wenn es erhitzt wird. Bei Bedarf jetzt noch etwas Hartkäse oben draufgeben.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Wie in vielen italienischen Rezepten ist es vor allem die korrekte Zubereitung, die den Unterschied macht.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                }
+              ],
+              "nodeType": "unordered-list"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
         }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "YcmIYY2clixkAC44Mcj9t",
+        "type": "Entry",
+        "createdAt": "2022-04-27T20:39:44.199Z",
+        "updatedAt": "2022-05-05T17:20:05.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Vegan Thai Coconut Soup with “Chicken“",
+        "description": "The best idea to provide a cold is to eat bowls and bowls of coconut soup. We prepared a quick and easy recipe for you, so you can throw all your leftover veggies in this soup and stay healthy,..",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "7Ce3ubwVQhxywtKRPVRjpF",
+            "type": "Asset",
+            "createdAt": "2022-04-27T20:38:02.615Z",
+            "updatedAt": "2022-04-27T20:38:02.615Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vegan Thai Coconut Soup with “Chicken“",
+            "description": "The best idea to provide a cold is to eat bowls and bowls of coconut soup. We prepared a quick and easy recipe for you, so you can throw all your leftover veggies in this soup and stay healthy.",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/7Ce3ubwVQhxywtKRPVRjpF/75470f588923ff2ed277a385c8da4938/r98-vegane-rote-thai-kokos-suppe34.webp",
+              "details": {
+                "size": 140580,
+                "image": {
+                  "width": 1860,
+                  "height": 1050
+                }
+              },
+              "fileName": "r98-vegane-rote-thai-kokos-suppe34.webp",
+              "contentType": "image/webp"
+            }
+          }
+        },
+        "difficulty": "Easy",
+        "cookTimeInMin": 30,
+        "ingredients": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "soup",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "heading-4"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 garlic clove",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "15 g (0.5 oz) fresh ginger",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 lemongrass",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "4 (150 g/5.3 oz) mushrooms",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1/2 (100 g/3.5 oz) bell pepper",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 (500 g/17.6 oz) broccoli",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1/2 (200 g/7 oz) zucchini",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "3 tbsp peanut or coconut oil",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2-3 tsp red curry paste",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "600 ml (2.5 cips) vegetable broth",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "800 ml (3.3 cups) coconut milk",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "100 g (3.5 oz) rice noodles",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "180 g (6.3 oz) vegan chicken (or tofu)",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "soy sauce",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                }
+              ],
+              "nodeType": "unordered-list"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "\n\n",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "instructions": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Peel and finely chop the garlic clove and ginger. Wash the lemongrass and bruise with the back of a knife.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Prepare the veggies: Wash and finely chop the zucchini, bell pepper, and broccoli, clean the mushrooms, and cut into quarters.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Heat peanut or coconut oil in a pot or wok.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Add the garlic, ginger, lemongrass and curry paste, and sauté for 2-3 minutes.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Add the veggie stock and bring to a boil. Fill in the coconut milk and stir well.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Prepare the rice noodles according to the package instructions.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Add the broccoli to the soup and let simmer for 3 minutes. Then add the bell pepper, mushrooms, and zucchini and simmer again for 5 minutes.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Fry the vegan chicken in a pan with a little oil.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "When the rice noodles and chicken are ready, add both to the soup.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Season the soup with soy sauce and lime juice.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Remove the lemongrass and arrange the soup with mung bean sprouts, peanuts, mint, cilantro and lime wedges.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "\n\n",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "mj0rX7tL76i3k8bzdhGr4",
+        "type": "Entry",
+        "createdAt": "2022-04-27T20:58:28.432Z",
+        "updatedAt": "2022-05-05T17:19:20.325Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": " Scampi with Pasta",
+        "description": "This quick and easy shrimp scampi pasta recipe is an Allrecipes fan-favorite, with more than one thousand ratings and hundreds of reviews. And it's ready to serve in only 40 minutes..",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "16aJYSI1c3eENIgpMrBquQ",
+            "type": "Asset",
+            "createdAt": "2022-04-27T20:56:09.419Z",
+            "updatedAt": "2022-04-27T20:56:09.419Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "image",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/16aJYSI1c3eENIgpMrBquQ/f943529bd1db8b14f23a414933bd0044/image.webp",
+              "details": {
+                "size": 44742,
+                "image": {
+                  "width": 596,
+                  "height": 596
+                }
+              },
+              "fileName": "image.webp",
+              "contentType": "image/webp"
+            }
+          }
+        },
+        "difficulty": "Easy",
+        "cookTimeInMin": 40,
+        "ingredients": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 (16 ounce) package linguine pasta",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 tablespoons butter",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 tablespoons extra-virgin olive oil",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 shallots, finely diced",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 cloves garlic, minced",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 pinch red pepper flakes (Optional)",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 pound shrimp, peeled and deveined",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 pinch kosher salt and freshly ground pepper",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "½ cup dry white wine",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 lemon, juiced",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 tablespoons butter",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 tablespoons extra-virgin olive oil",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "¼ cup finely chopped fresh parsley leaves",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 teaspoon extra-virgin olive oil, or to taste",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                }
+              ],
+              "nodeType": "unordered-list"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "\n\n",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "instructions": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Bring a large pot of salted water to a boil; cook linguine in boiling water until nearly tender, 6 to 8 minutes. Drain.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Melt 2 tablespoons butter with 2 tablespoons olive oil in a large skillet over medium heat. Cook and stir shallots, garlic, and red pepper flakes in the hot butter and oil until shallots are translucent, 3 to 4 minutes. Season shrimp with kosher salt and black pepper; add to the skillet and cook until pink, stirring occasionally, 2 to 3 minutes. Remove shrimp from skillet and keep warm.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Pour white wine and lemon juice into skillet and bring to a boil while scraping the browned bits of food off of the bottom of the skillet with a wooden spoon. Melt 2 tablespoons butter in skillet, stir 2 tablespoons olive oil into butter mixture, and bring to a simmer. Toss linguine, shrimp, and parsley in the butter mixture until coated; season with salt and black pepper. Drizzle with 1 teaspoon olive oil to serve.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "\n\n",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "6sH0hXmC2ZK1CeUZYSZANU",
+        "type": "Entry",
+        "createdAt": "2022-04-27T21:11:08.958Z",
+        "updatedAt": "2022-05-05T17:18:05.829Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Roasted Indian-Spiced Vegetables",
+        "description": "These Indian-inspired roasted vegetables have a pop of flavor and a hint of heat from the aromatic and well-known Indian spice blend, garam masala.",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "4w53FYWRfEigjzISFBWNrY",
+            "type": "Asset",
+            "createdAt": "2022-04-27T21:09:27.734Z",
+            "updatedAt": "2022-04-27T21:09:27.734Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "image",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/4w53FYWRfEigjzISFBWNrY/b4fc11478222f193c84f2ac4fe458351/image.webp",
+              "details": {
+                "size": 48922,
+                "image": {
+                  "width": 594,
+                  "height": 398
+                }
+              },
+              "fileName": "image.webp",
+              "contentType": "image/webp"
+            }
+          }
+        },
+        "difficulty": "Easy",
+        "ingredients": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "3 tablespoons olive oil",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 teaspoons garam masala",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 teaspoon salt",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 medium potatoes, peeled and cut into 1-inch cubes",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 cups cauliflower florets",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "1 medium yellow onion, cut into 1/2-inch wedges",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "2 tablespoons minced cilantro",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                }
+              ],
+              "nodeType": "unordered-list"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "\n\n",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "instructions": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Preheat the oven to 425 degrees F (220 degrees C). Line a baking sheet with parchment paper.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Whisk olive oil, garam masala, and salt together in a small bowl. Combine potatoes, cauliflower, and onion in a large bowl. Drizzle with oil mixture and toss to coat. Spread vegetables out on the prepared baking sheet.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Roast in the preheated oven, stirring every 10 minutes, until vegetables are tender and edges are browned, 30 to 35 minutes. Remove from the oven and sprinkle with cilantro.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "\n\n",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "5BzD0PKWX475mO4ARcnMfq",
+        "type": "Entry",
+        "createdAt": "2022-04-27T21:03:10.214Z",
+        "updatedAt": "2022-05-05T17:11:20.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "West African-Style Peanut Stew with Chicken",
+        "description": "African-inspired spices infuse the peanut butter and tomato base of this hearty one-pot stew starring chicken, sweet potatoes, and collard greens.",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "59NgRDpmEeTA6J3uiRDMp1",
+            "type": "Asset",
+            "createdAt": "2022-04-27T21:01:06.612Z",
+            "updatedAt": "2022-04-27T21:01:06.612Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "image",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/59NgRDpmEeTA6J3uiRDMp1/98237a6214c62f7fa9d95a890cf1a639/image.webp",
+              "details": {
+                "size": 67738,
+                "image": {
+                  "width": 596,
+                  "height": 596
+                }
+              },
+              "fileName": "image.webp",
+              "contentType": "image/webp"
+            }
+          }
+        },
+        "difficulty": "Medium",
+        "cookTimeInMin": 60,
+        "ingredients": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-header-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-header-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "1 ½",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "pounds boneless, skinless chicken breasts, cut into 1-inch pieces",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "1 ",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon salt, divided",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "¼",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon ground black pepper",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "3",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "tablespoons peanut oil, divided",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "2",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "cups diced onion",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "2",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "cloves garlic, minced",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "2",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "tablespoons minced fresh ginger root",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "1",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon ground coriander",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "½",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon ground cumin",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "¼",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon ground turmeric",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "¼",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "teaspoon ground cinnamon",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "4",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "cups low-sodium chicken broth",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "1 (14.5 ounce)",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "can no-salt-added diced tomatoes with juices",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "1",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": " large sweet potato, peeled and cut into 1-inch cubes",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "½",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "bunch collard greens, tough ribs removed and leaves chopped",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "2",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "red bell peppers, seeded and chopped",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "⅓",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "cup natural peanut butter",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "6",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "tablespoons chopped peanuts",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "table-cell"
+                    }
+                  ],
+                  "nodeType": "table-row"
+                }
+              ],
+              "nodeType": "table"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "instructions": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Season chicken with 1/2 teaspoon salt and the black pepper. Heat 1 tablespoon oil in a large pot over medium-high heat. Add half the chicken; cook until no longer pink, 2 to 3 minutes, then transfer to a plate. Repeat with 1 tablespoon oil and remaining chicken.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": " Add remaining 1 tablespoon oil to the pot and reduce heat to medium. Add onion; cook until softened, about 3 minutes. Add garlic, ginger, coriander, cumin, turmeric, cinnamon, and remaining 1/2 teaspoon salt; cook, stirring, 30 seconds.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Stir in broth, tomatoes, sweet potato, ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "hyperlink",
+                          "data": {
+                            "uri": "https://www.allrecipes.com/article/what-are-collard-greens/"
+                          },
+                          "content": [
+                            {
+                              "nodeType": "text",
+                              "value": "collard greens",
+                              "marks": [],
+                              "data": {}
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": ", and red bell peppers; bring to a boil. Reduce heat to medium-low; simmer, partially covered, until vegetables are tender, about 20 minutes.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "Return chicken and accumulated juices to the pot. Return to a boil, then stir in peanut butter; simmer until incorporated and chicken is cooked through, 3 to 5 minutes. Garnish with chopped peanuts.",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "3nrk0ikk6gs9"
+          }
+        },
+        "id": "62oL9J7ivS0PyDoAX1dotx",
+        "type": "Entry",
+        "createdAt": "2022-04-28T14:50:09.961Z",
+        "updatedAt": "2022-05-05T16:07:24.591Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recipeGroup3"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Quinoa and Eggplant Stuffed Peppers",
+        "description": "Green bell peppers are stuffed with quinoa, eggplant, cheese, and herbs, for a great vegetarian main entree or a healthy side dish.",
+        "image": {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "3nrk0ikk6gs9"
+              }
+            },
+            "id": "w29ZqdcKKxmQPjgVebN0v",
+            "type": "Asset",
+            "createdAt": "2022-04-28T14:46:53.868Z",
+            "updatedAt": "2022-04-28T14:46:53.868Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Quinoa Stuffed Peppers Recipe fifteenspatulas 1-640x427",
+            "description": "",
+            "file": {
+              "url": "//images.ctfassets.net/3nrk0ikk6gs9/w29ZqdcKKxmQPjgVebN0v/e87d8cbc73fd54af1abe1a8a2ca216f9/Quinoa_Stuffed_Peppers_Recipe_fifteenspatulas_1-640x427.jpg",
+              "details": {
+                "size": 28435,
+                "image": {
+                  "width": 640,
+                  "height": 427
+                }
+              },
+              "fileName": "Quinoa_Stuffed_Peppers_Recipe_fifteenspatulas_1-640x427.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        "difficulty": "Medium",
+        "cookTimeInMin": 70,
+        "ingredients": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "unordered-list",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "2 tbsp olive oil",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "1eggplant ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": "cubed into 1 inch pieces",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "4 scallions ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": "sliced",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "2 cloves garlic",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "3 cups cooked quinoa ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": "(1.25 cups uncooked)",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "1/2 cup shredded mozzarella cheese ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": "plus 1/4 cup extra for sprinkling",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "1/3 cup grated parmesan cheese",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "1/2 cup loosely packed parsley leaves",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "1 cup tomato sauce ",
+                          "marks": [],
+                          "data": {}
+                        },
+                        {
+                          "nodeType": "text",
+                          "value": "plus 4 tbsp more for the end",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "4 large green bell peppers",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "list-item",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "paragraph",
+                      "data": {},
+                      "content": [
+                        {
+                          "nodeType": "text",
+                          "value": "salt and pepper",
+                          "marks": [],
+                          "data": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "paragraph",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        "instructions": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Preheat the oven to 350 degrees F.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Heat up a nonstick skillet over medium heat and add the olive oil. Add the eggplant, sprinkle with salt and pepper, then cook for 7-8 minutes until tender. Add the scallions and garlic to the eggplant, and stir for 1 minute.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Turn the heat off and add the cooked quinoa, mozzarella cheese, parmesan, parsley, and tomato sauce. Season to taste with salt and pepper.",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "marks": [],
+                          "value": "Cut the tops off the peppers and scrape out the seeds and ribs with a spoon or melon baller. Place the peppers into an 8×8 dish, then pour a 1/2 cup of water into the bottom of the pan. Spoon the quinoa mixture evenly into the peppers. Cover the dish with foil, then bake for 50 minutes, until the peppers are slightly tender. Spoon extra tomato sauce on top and sprinkle a little more mozzarella, and bake the peppers for another 10 minutes, uncovered. Serve and enjoy!",
+                          "nodeType": "text"
+                        }
+                      ],
+                      "nodeType": "paragraph"
+                    }
+                  ],
+                  "nodeType": "list-item"
+                }
+              ],
+              "nodeType": "unordered-list"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "\n",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        }
+      }
+    }
+  ],
+  "includes": {
+    "Asset": [
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "16aJYSI1c3eENIgpMrBquQ",
+          "type": "Asset",
+          "createdAt": "2022-04-27T20:56:09.419Z",
+          "updatedAt": "2022-04-27T20:56:09.419Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "image",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/16aJYSI1c3eENIgpMrBquQ/f943529bd1db8b14f23a414933bd0044/image.webp",
+            "details": {
+              "size": 44742,
+              "image": {
+                "width": 596,
+                "height": 596
+              }
+            },
+            "fileName": "image.webp",
+            "contentType": "image/webp"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "4H8Whtf5IXxNdgEoryop2q",
+          "type": "Asset",
+          "createdAt": "2022-04-27T16:10:52.010Z",
+          "updatedAt": "2022-04-27T16:10:52.010Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "spaghetti-aglio-olio-e-peperoncino",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/4H8Whtf5IXxNdgEoryop2q/b4f755522a91702843d250a2b2566ac7/spaghetti-aglio-olio-e-peperoncino.jpg",
+            "details": {
+              "size": 52168,
+              "image": {
+                "width": 600,
+                "height": 400
+              }
+            },
+            "fileName": "spaghetti-aglio-olio-e-peperoncino.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "4w53FYWRfEigjzISFBWNrY",
+          "type": "Asset",
+          "createdAt": "2022-04-27T21:09:27.734Z",
+          "updatedAt": "2022-04-27T21:09:27.734Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "image",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/4w53FYWRfEigjzISFBWNrY/b4fc11478222f193c84f2ac4fe458351/image.webp",
+            "details": {
+              "size": 48922,
+              "image": {
+                "width": 594,
+                "height": 398
+              }
+            },
+            "fileName": "image.webp",
+            "contentType": "image/webp"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "59NgRDpmEeTA6J3uiRDMp1",
+          "type": "Asset",
+          "createdAt": "2022-04-27T21:01:06.612Z",
+          "updatedAt": "2022-04-27T21:01:06.612Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "image",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/59NgRDpmEeTA6J3uiRDMp1/98237a6214c62f7fa9d95a890cf1a639/image.webp",
+            "details": {
+              "size": 67738,
+              "image": {
+                "width": 596,
+                "height": 596
+              }
+            },
+            "fileName": "image.webp",
+            "contentType": "image/webp"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "7Ce3ubwVQhxywtKRPVRjpF",
+          "type": "Asset",
+          "createdAt": "2022-04-27T20:38:02.615Z",
+          "updatedAt": "2022-04-27T20:38:02.615Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Vegan Thai Coconut Soup with “Chicken“",
+          "description": "The best idea to provide a cold is to eat bowls and bowls of coconut soup. We prepared a quick and easy recipe for you, so you can throw all your leftover veggies in this soup and stay healthy.",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/7Ce3ubwVQhxywtKRPVRjpF/75470f588923ff2ed277a385c8da4938/r98-vegane-rote-thai-kokos-suppe34.webp",
+            "details": {
+              "size": 140580,
+              "image": {
+                "width": 1860,
+                "height": 1050
+              }
+            },
+            "fileName": "r98-vegane-rote-thai-kokos-suppe34.webp",
+            "contentType": "image/webp"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "3nrk0ikk6gs9"
+            }
+          },
+          "id": "w29ZqdcKKxmQPjgVebN0v",
+          "type": "Asset",
+          "createdAt": "2022-04-28T14:46:53.868Z",
+          "updatedAt": "2022-04-28T14:46:53.868Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Quinoa Stuffed Peppers Recipe fifteenspatulas 1-640x427",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/3nrk0ikk6gs9/w29ZqdcKKxmQPjgVebN0v/e87d8cbc73fd54af1abe1a8a2ca216f9/Quinoa_Stuffed_Peppers_Recipe_fifteenspatulas_1-640x427.jpg",
+            "details": {
+              "size": 28435,
+              "image": {
+                "width": 640,
+                "height": 427
+              }
+            },
+            "fileName": "Quinoa_Stuffed_Peppers_Recipe_fifteenspatulas_1-640x427.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
     ]
-
+  }
 }

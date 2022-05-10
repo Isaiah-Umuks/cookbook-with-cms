@@ -4,12 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 import { Link } from 'react-router-dom';
-import Footer from './footer.js';
 import { getRecipes } from '../API/data.js'; //data.js file
 
 const article = (data) => {
-  // console.log(data.filter(data => data.fields.name === 'Quinoa and Eggplant Stuffed Peppers'));
-  console.log(data);
   const result = data;
   return result.map((iteration) => {
     return (
@@ -27,17 +24,16 @@ const article = (data) => {
             >
               {iteration.fields.name}
             </p>
-            <div class="text-center">
-            <Link
-          className='btn btn-primary' 
-          to={`/DetailedRecipe/${iteration.fields.name}`}
-        >
-          Read more
-        </Link>
-        </div>
+            <div class='text-center'>
+              <Link
+                className='btn btn-primary'
+                to={`/DetailedRecipe/${iteration.fields.name}`}
+              >
+                Read more
+              </Link>
+            </div>
           </div>
         </div>
-        
       </div>
     );
   });
@@ -111,7 +107,7 @@ const MainPage = () => {
           <div className='row d-flex flex-wrap mt-2'>{fetchdata}</div>
         </div>
       </main>
-      </div>
+    </div>
   );
 };
 

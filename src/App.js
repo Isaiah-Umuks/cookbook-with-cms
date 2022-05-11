@@ -3,13 +3,13 @@ import { Routes, Route, useParams } from 'react-router-dom';
 import Recipe from './components/recipe';
 import MainPage from './components/mainpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar';
+import Navbar from './components/navbar';
 import Footer from './components/footer';
 import { getRecipes } from './API/data';
 
 export default function App() {
   const { recipename } = useParams();
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -19,9 +19,10 @@ export default function App() {
 
   return (
     <div className='container-sm'>
-      <NavBar />
+      <Navbar />
       <Routes>
         <Route path='/' element={<MainPage data={data} />} />
+
         <Route
           path='/DetailedRecipe/:recipename'
           element={<Recipe data={data} />}

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <Link className='navbar-brand text-dark' to={'/'}>
@@ -59,4 +59,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
